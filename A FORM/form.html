@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>form tags</title>
+        <style>
+                h1{
+                        background-color: rgb(240, 138, 98);
+                }
+                table {
+                        margin: auto;
+                }
+
+                td {
+                        text-align: left;
+                }
+        </style>
+</head>
+
+<body>
+        <form style="text-align: center;">
+                <h1>The Form Registration</h1>
+                <table>
+                        <tr>
+                                <td><label for="fname" style="cursor: pointer;">First Name : </label></td>
+                                <td><input placeholder="first name " type="text" id="fname"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="lname" style="cursor: pointer;">Last Name : </label></td>
+                                <td><input placeholder="Last name " type="text" id="lname"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="faname" style="cursor: pointer;">Father's Name : </label></td>
+                                <td><input placeholder="Father's name " type="text" id="faname"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="mname" style="cursor: pointer;">Mother's Name : </label></td>
+                                <td><input placeholder="Mother's name " type="text" id="mname"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="address" style="cursor: pointer;">Address : </label></td>
+                                <td><textarea id="address" cols="30" rows="5"
+                                                placeholder="Type your Address here"> </textarea></td>
+                        </tr>
+                        <tr>
+                                <td><label for="gender">Gender : </label></td>
+                                <td>
+                                        <input style="cursor: pointer;" type="radio" name="gender" value="Male"
+                                                id="male">
+                                        <label style="cursor: pointer;" for="male">Male</label>
+                                        <input style="cursor: pointer;" type="radio" name="gender" value="Female"
+                                                id="female">
+                                        <label style="cursor: pointer;" for="female">Female</label>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>Stream:</td>
+                                <td>
+                                        <input style="cursor: pointer;" type="radio" name="stream" id="sci">
+                                        <label style="cursor: pointer;" for="sci">Science</label>
+                                        <input style="cursor: pointer;" type="radio" name="stream" id="com">
+                                        <label style="cursor: pointer;" for="com">Commerce</label>
+                                        <input style="cursor: pointer;" type="radio" name="stream" id="arts">
+                                        <label style="cursor: pointer;" for="arts">Arts</label>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>Caste category:</td>
+                                <td>
+                                        <select name="category" id="cetegory">
+                                                <option value="Select">Select...</option>
+                                                <option value="ST">ST</option>
+                                                <option value="SC">SC</option>
+                                                <option value="OBC">OBC</option>
+                                                <option value="General">General</option>
+                                        </select>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>Select your Subjects: </td>
+                                <td>
+                                        <input type="checkbox" name="Hindi" id="Hindi">
+                                        <label for="Hindi">Hindi</label>
+                                        <input type="checkbox" name="English" id="English">
+                                        <label for="English">English</label>
+                                        <input type="checkbox" name="computer" id="computer">
+                                        <label for="computer">computer</label>
+                                        <br>
+                                        <input type="checkbox" name="Science" id="Science">
+                                        <label for="Science">Science</label>
+                                        <input type="checkbox" name="Maths" id="Maths">
+                                        <label for="Maths">Maths</label>
+                                        <input type="checkbox" name="Bussiness" id="Bussiness">
+                                        <label for="Bussiness">Bussiness</label>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td> <label style=" cursor: pointer;" for="dob"> DOB : </label></td>
+                                <td>
+                                        <input type="date" name="dob" id="dob">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td><label style="cursor: pointer;" for="phoneno">Phone No.</label></td>
+                                <td><input type="tel" name="phoneno" pattern="[0-9]{10}" required id="phoneno"></td>
+                        </tr>
+                        <tr>
+                                <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                                <td></td>
+                                <td>
+                                        <input type="reset" value="Reset All">
+                                        <input type="submit" value="Submit Form">
+                                </td>
+                        </tr>
+                </table>
+        </form>
+</body>
+
+</html>
